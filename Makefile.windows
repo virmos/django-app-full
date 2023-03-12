@@ -1,14 +1,14 @@
-BINARY_NAME=djangoApp.exe
+BINARY_NAME=app.exe
 
 ## build: builds all binaries
 build:
-    @go mod vendor
-    @go build -o tmp/${BINARY_NAME} .
+	@go mod vendor
+	@go build -o tmp/${BINARY_NAME} .
 	@echo Django built!
 
 run:
 	@echo Staring Django...
-    @start /min cmd /c tmp\${BINARY_NAME} &
+	@start /min cmd /c tmp/${BINARY_NAME} &
 	@echo Django started!
 
 clean:
