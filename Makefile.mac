@@ -9,7 +9,7 @@ build:
 run: build
 	@echo "Starting Django..."
 	@./tmp/${BINARY_NAME} &
-	@echo "CelDjangoeritas started!"
+	@echo "Django started!"
 
 clean:
 	@echo "Cleaning..."
