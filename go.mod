@@ -2,7 +2,7 @@ module myapp
 
 go 1.17
 
-replace github.com/virmos/django => ../django
+replace github.com/virmos/django => ../../
 
 require (
 	github.com/CloudyKit/jet/v6 v6.2.0
