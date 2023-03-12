@@ -1,15 +1,15 @@
-BINARY_NAME=celeritasApp
+BINARY_NAME=djangoApp
 
 build:
 	@go mod vendor
-	@echo "Building Celeritas..."
+	@echo "Building Django..."
 	@go build -o tmp/${BINARY_NAME} .
-	@echo "Celeritas built!"
+	@echo "Django built!"
 
 run: build
-	@echo "Starting Celeritas..."
+	@echo "Starting Django..."
 	@./tmp/${BINARY_NAME} &
-	@echo "Celeritas started!"
+	@echo "CelDjangoeritas started!"
 
 clean:
 	@echo "Cleaning..."
@@ -25,8 +25,8 @@ test:
 start: run
 
 stop:
-	@echo "Stopping Celeritas..."
+	@echo "Stopping Django..."
 	@-pkill -SIGTERM -f "./tmp/${BINARY_NAME}"
-	@echo "Stopped Celeritas!"
+	@echo "Stopped Django!"
 
 restart: stop start

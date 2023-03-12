@@ -7,6 +7,6 @@ import (
 )
 
 type Middleware struct {
-	App *celeritas.Celeritas
+	App *django.Django
 	Models data.Models
 }

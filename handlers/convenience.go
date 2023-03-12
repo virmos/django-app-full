@@ -40,7 +40,7 @@ func (h *Handlers) randomString(n int) string {
 }
 
 func (h *Handlers) encrypt(text string) (string, error) {
-	enc := celeritas.Encryption{Key: []byte(h.App.EncryptionKey)}
+	enc := django.Encryption{Key: []byte(h.App.EncryptionKey)}
 
 	encrypted, err := enc.Encrypt(text)
 	if err != nil {
@@ -50,7 +50,7 @@ func (h *Handlers) encrypt(text string) (string, error) {
 }
 
 func (h *Handlers) decrypt(crypto string) (string, error) {
-	enc := celeritas.Encryption{Key: []byte(h.App.EncryptionKey)}
+	enc := django.Encryption{Key: []byte(h.App.EncryptionKey)}
 
 	decrypted, err := enc.Decrypt(crypto)
 	if err != nil {

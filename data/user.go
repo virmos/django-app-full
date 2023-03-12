@@ -27,7 +27,7 @@ func (u *User) Table() string {
 	return "users"
 }
 
-func (u *User) Validate(validator *celeritas.Validation) {
+func (u *User) Validate(validator *django.Validation) {
 	validator.Check(u.LastName != "", "last_name", "Last name must be provided")
 	validator.Check(u.FirstName != "", "first_name", "First name must be provided")
 	validator.Check(u.Email != "", "email", "Email must be provided")

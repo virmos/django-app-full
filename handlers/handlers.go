@@ -9,9 +9,9 @@ import (
 	"github.com/virmos/django"
 )
 
-// Handlers is the type for handlers, and gives access to Celeritas and models
+// Handlers is the type for handlers, and gives access to Django and models
 type Handlers struct {
-	App    *celeritas.Celeritas
+	App    *django.Django
 	Models data.Models
 }
 

@@ -2,7 +2,7 @@ module myapp
 
 go 1.17
 
-replace github.com/virmos/django => ../celeritas
+replace github.com/virmos/django => ../django
 
 require (
 	github.com/CloudyKit/jet/v6 v6.2.0
@@ -12,9 +12,8 @@ require (
 	github.com/jackc/pgx/v4 v4.18.1
 	github.com/justinas/nosurf v1.1.1
 	github.com/ory/dockertest/v3 v3.8.0
-	github.com/virmos/django v0.0.0-20220111160753-560e89bc68a4
 	github.com/upper/db/v4 v4.2.1
-	github.com/virmos/django v0.0.0
+	github.com/virmos/django v1.0.0
 	golang.org/x/crypto v0.7.0
 )
 
