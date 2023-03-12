@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"myapp/data"
+	"ecom/data"
 	"net/http"
 	"strconv"
 
@@ -46,7 +46,7 @@ func (a *application) routes() *chi.Mux {
 	a.get("/test-mail", func(w http.ResponseWriter, r *http.Request) {
 		msg := mailer.Message{
 			From:        "info@verilion.com",
-			To:          "trevor.sawler@gmail.com",
+			To:          "hadonggiang1810@gmail.com",
 			Subject:     "Test Subject - sent using an API",
 			Template:    "test",
 			Attachments: nil,
@@ -69,8 +69,8 @@ func (a *application) routes() *chi.Mux {
 
 	a.App.Routes.Get("/create-user", func(w http.ResponseWriter, r *http.Request) {
 		u := data.User{
-			FirstName: "Trevor",
-			LastName:  "Sawler",
+			FirstName: "Ha",
+			LastName:  "Dong Giang",
 			Email:     "me@here.com",
 			Active:    1,
 			Password:  "password",
